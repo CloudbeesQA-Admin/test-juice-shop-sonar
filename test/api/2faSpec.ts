@@ -172,7 +172,7 @@ describe('/rest/2fa/status', () => {
     const { token } = await login({
       email: `wurstbrot@${config.get<string>('application.domain')}`,
       password: 'EinBelegtesBrotMitSchinkenSCHINKEN!',
-      totpSecret: 'IFTXE3SPOEYVURT2MRYGI52TKJ4HC3KH'
+
     })
 
     // @ts-expect-error FIXME promise return handling broken
